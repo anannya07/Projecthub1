@@ -44,16 +44,23 @@
 
 #search-icon {
   position: absolute;
-  right: 1rem; /* Position it inside the input on the left */
+  right: 1rem; /* Adjust as needed */
   top: 50%;
   transform: translateY(-50%);
-  font-size: 1.2rem; /* Adjust icon size */
+  width: 1.2rem; /* Adjust icon size */
+  height: auto; /* Maintain aspect ratio */
   pointer-events: none; /* Ensure clicks go to the input field */
-  color:#969696;
+  color: #969696; /* This will not affect images, you can remove this line */
 }
-.dark-mode #search-icon {
-  color:var(--black-color);
+#mode-icon  {
+  position: absolute; /* Adjust as needed */
+  top: 50%;
+  transform: translateY(-50%);
+  max-width: 24px;
+  max-height: 24px;
+  cursor: pointer; /* Indicate it's clickable */
 }
+
 
 /* Styles for smaller screens */
 @media (max-width: 833px) {
@@ -353,17 +360,7 @@ img {
   margin-left: 0.5rem; /* Reduced space between search bar and sun icon */
 }
 
-.header .navbar .row .icons .icon span {
-  display: block;
-  width: 1rem;
-  height: 1rem;
-  background-color: var(--primary-color);
-  border: 1px solid var(--primary-color);
-  position: absolute;
-  top: 0.3rem;
-  right: 0.4rem;
-  border-radius: 50%;
-}
+
 
 .header .hamburger,
 .header .close {
@@ -413,7 +410,7 @@ img {
   .header .navbar .row .icons .icon .search-bar{
     display: none;
   }
-  .header .navbar .row .icons .icon i{
+  .header .navbar .row .icons .icon #search-icon{
     display: none;
   }
   .header .navbar .row .icons .icon #mode-icon{
@@ -425,6 +422,11 @@ img {
   .header .navbar .icons .icon .login-button{
     display: none;
   }
+  .header .navbar .row .icons .icon #mode-icon{
+    display: flex;
+    padding-top: 10%;
+  }
+
 }
 @media (max-width: 1354px) {
   .header .navbar {
@@ -826,9 +828,7 @@ img {
 
 .scroll-arrow {
   background: transparent; /* Transparent background for the circle */
-  border: 2px solid white; /* White border for the circle */
   font-size: 2rem;
-  color: white; /* White color for the arrow */
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -836,15 +836,13 @@ img {
   z-index: 1;
   width: 50px;
   height: 50px;
-  border-radius: 50%; /* Circle shape */
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.dark-mode .scroll-arrow {
-  border: 2px solid rgb(2, 2, 2); 
-  color: rgb(2, 2, 2);
-}
+
+/* Dark mode */
+
 .scroll-arrow.left-arrow {
   left: 0;
 }
@@ -923,16 +921,14 @@ img {
   position: absolute;
   top: 20%;
   right: 1rem; /* Fixed position from the right */
-  display: inline-block;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
-  border-top: 6px solid #F4F4F5; /* White color for the arrow */
   margin-left: 10px;
-  transition: border-color 0.3s ease, transform 0.3s ease; /* Smooth color and rotation transition */
+  transition:  0.3s ease, transform 0.3s ease; /* Smooth color and rotation transition */
+  max-width:24px;
+  max-height: 24px;
+  
+  
   }
-  .dark-mode .faq-toggle{
-    border-top: 6px solid #0B0B0A; ;
-  }
+  
 
 .faq-item.active .faq-toggle {
   transform: rotate(180deg); /* Rotate the arrow when active */
@@ -1034,6 +1030,15 @@ img {
 .footer li {
   margin-bottom: 0.5rem;
   text-align: left;
+
+}
+.footer-links a {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 15.08px;
+  text-align: left;
+
 }
 
 .footer a {
@@ -1052,10 +1057,36 @@ img {
 .dark-mode .footer-contact a{
   color:var(--black-color);
 }
-.footer-contact i {
-  margin-right: 0.5rem; /* Space between icon and text */
-  font-size: 1.5rem; /* Adjust size of icons as needed */
+.footer-contact ul {
+  list-style: none; /* Remove bullet points */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
 }
+
+.footer-contact li {
+  display: flex; /* Use flexbox to align items horizontally */
+  align-items: center; /* Vertically center the icon and text */
+  margin-bottom: 0.5rem; /* Add some spacing between each list item */
+}
+
+.footer-contact img {
+  padding-top: 2px;
+  margin-right: 0.5rem; /* Space between icon and text */
+  width: 24px; /* Adjust the size of the icons as needed */
+  height: 24px;
+}
+
+.footer-contact a {
+  text-decoration: none; /* Remove underline from links */
+  color: inherit; /* Inherit text color */
+  font-family: Inter;
+font-size: 20px;
+font-weight: 400;
+line-height: 15.08px;
+text-align: left;
+
+}
+
 .footer-bottom {
   margin-top: 5%;
   text-align: center;
