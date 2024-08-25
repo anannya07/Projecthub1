@@ -4,6 +4,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!-- ====== Favicon ====== -->
   <!-- ====== Boxicons ====== -->
@@ -50,9 +53,12 @@
         <div class="icons d-flex">
 
           <div class="icon user-icon d-flex">
-            <input type="text" class="search-bar" placeholder="Search...">
-        <i class="bx bx-search" id="search-icon"></i>
-          </div>
+
+            <div class="search_container">
+              <input type="text" class="search-bar" placeholder="Search...">
+              <i class="bx bx-search" id="search-icon"></i>
+                </div>
+            </div>
           <div class="icon user-icon d-flex">
             <i class="bx bx-sun" id="mode-icon"></i>
             </div>
@@ -70,14 +76,17 @@
 
     <div class="hero">
       <div class="row container d-flex">
-        <img src="./images/hero_model.png" alt="" />
+        <img src="./images/hero_model.png" alt="" class="img-fluid" />
+
         <div class="col">
           <span class="subtitle">Explore  Projects,</span>
           <span class="subtitle">Get Inspired</span>
-          <p class=>Discover the most innovative projects developed by our students.
-            From cutting-edge </p><p>technology to groundbreaking research,
-            ProjectHub brings you the best of student</p><p class=>egnuity.</p>
-          <a href="#scroll"><button class="btn">Explore Projects!</button></a>
+          <div class="paragraph">
+            <p class=>Discover the most innovative projects developed by our students.
+              From cutting-edge </p><p>technology to groundbreaking research,
+              ProjectHub brings you the best of student</p><p class=>egnuity.</p>
+          </div>
+          <a href="#scroll"><button class="btn">Explore Projects</button></a>
         </div>
         
       </div>
