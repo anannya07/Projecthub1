@@ -1032,12 +1032,13 @@ img {
   text-align: left;
 
 }
-.footer-links a {
+.footer-links li a {
   font-family: Inter;
   font-size: 20px;
   font-weight: 400;
   line-height: 15.08px;
   text-align: left;
+
 
 }
 
@@ -1069,8 +1070,9 @@ img {
   margin-bottom: 0.5rem; /* Add some spacing between each list item */
 }
 
-.footer-contact img {
-  padding-top: 2px;
+.footer-contact .social-icon {
+  vertical-align: middle;
+
   margin-right: 0.5rem; /* Space between icon and text */
   width: 24px; /* Adjust the size of the icons as needed */
   height: 24px;
@@ -1080,11 +1082,11 @@ img {
   text-decoration: none; /* Remove underline from links */
   color: inherit; /* Inherit text color */
   font-family: Inter;
-font-size: 20px;
-font-weight: 400;
-line-height: 15.08px;
-text-align: left;
-
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 15.08px;
+  text-align: left;
+  
 }
 
 .footer-bottom {
@@ -1107,9 +1109,26 @@ text-align: left;
 
 @media (max-width: 480px) {
   .footer h3 {
-      font-size: 1rem;
+      font-size: 1.2rem; /* Slightly larger for readability */
+      margin-bottom: 1.5rem; /* Adjusted spacing */
+  }
+  .footer-contact a {
+      font-size: 1rem; /* Adjust text size for smaller screens */
   }
   .footer-bottom {
-      font-size: 0.8rem;
+      font-size: 0.9rem; /* Increased font size slightly */
+      margin-top: 2rem; /* Reduced margin for a more compact design */
+      padding: 1rem 0; /* Added padding for better spacing */
+      line-height: 1.4; /* Adjusted line height for readability */
+      text-align: center;
   }
 }
+@media (max-width: 480px) {
+  .footer-links li a {
+      font-size: 1rem; /* Reduce font size for smaller screens */
+      line-height: 1.5; /* Increase line height for better readability */
+      font-weight: 400; /* Maintain the same font weight */
+      text-align: left; /* Keep the text alignment consistent */
+  }
+}
+
