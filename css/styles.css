@@ -209,14 +209,19 @@ img {
 .logo{
   
   position: absolute; /* Position the logo absolutely relative to its closest positioned ancestor */
-  top: 4rem; /* Aligns the logo to the top of the page */
+  /*top: 4rem; /* Aligns the logo to the top of the page */
   left: 2.5rem; /* Aligns the logo to the left side of the page */
-  margin-top: 0; /* Remove any additional top margin */
+  margin-top: 0.5%; /* Remove any additional top margin */
   margin-left: 3%; /* Remove any additional left margin */
   width: 142.12px;
   height: 70px;
   opacity: 1; /* Make sure the logo is visible */
   margin-right: auto; /* Keeps the logo on the left */
+  width: 122.12px;
+  height: 24px;
+  gap: 0px;
+  opacity: 0px;
+  
   
 }
 /* Adjust logo position and size for medium screens (e.g., tablets) */
@@ -723,6 +728,22 @@ img {
   padding: 1rem 0;
 
 }
+/* mouse scroll*/
+.card-scroll {
+  display: flex;
+  overflow-x: scroll; /* Allow horizontal scrolling */
+  overflow-y: hidden; /* Hide vertical overflow */
+  white-space: nowrap;
+  padding: 1rem 0;
+  scrollbar-width: none; /* Hide scrollbar in Firefox */
+  -ms-overflow-style: none; /* Hide scrollbar in Internet Explorer and Edge */
+}
+
+.card-scroll::-webkit-scrollbar {
+  display: none; /* Hide scrollbar in Chrome, Safari, and Opera */
+}
+
+/*****/
 
 .card {
   position: relative;
@@ -740,14 +761,23 @@ img {
   background: #EBE6F9;
   border: 1px solid #C5C5C5;
 }
-.card:hover {
-  transform: scale(1.03); /* Slightly increase the size */
-  box-shadow: 0 0 15px rgba(97, 10, 168, 0.3), 0 0 20px rgba(0, 0, 255, 0.7);
+
+@keyframes smart-animate {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.03); /* Or any other transformation you need */
+  }
 }
-.dark-mode .card:hover {
-  transform: scale(1.05); /* Slightly increase the size */
-  box-shadow: 0 0 15px rgba(187, 187, 187, 0.3), 0 0 20px rgba(0, 0, 255, 0.7);
+
+.card.animate {
+  animation-name: smart-animate;
+  animation-timing-function: ease-out;
+  animation-duration: 300ms;
+  animation-fill-mode: forwards; /* Ensures the final state is retained */
 }
+
 .inner-box {
   position: absolute;
   width: 314px;
@@ -764,7 +794,7 @@ img {
 }
 .inner-box h2 {
   margin: 0.5rem 0; /* Margin for spacing */
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: Inter;
   font-size: 24px;
   font-weight: 700;
   line-height: 36px;
@@ -783,11 +813,11 @@ img {
   margin: 0.5rem 0; /* Margin for spacing */
   font-size: 16px;
   font-weight: 300;
-  line-height: 10.4px;
+  line-height: 18.4px;
   letter-spacing: -0.02em;
   text-align: left;
   color:var(--white-color);
-  margin-bottom: 2%;
+  font-family:Inter;
 
 }
 .dark-mode .inner-box p {
@@ -799,18 +829,32 @@ img {
   gap: 0.5rem; /* Space between buttons */
   margin: 0.5rem 0; /* Space between buttons and paragraph */
   border-radius: 45px 0px 0px 0px;
+  padding-top: 2%;
 
 }
 
 .inner-box .buttons button {
-  background:var(--primary-color);
-  color: var(--white-color);
-  border: none;
-  padding: 0.5rem 1rem;
-  border-radius:45px;
-  padding:6px, 12px, 6px, 12px;
+  
+  background: #7B61FF33;
+  border: 1px solid #7B61FF;
+  color: var(--white-color); 
   cursor: pointer;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  width: Hug (48px)px;
+  height: Hug (24px)px;
+  padding: 2px 14px 2px 14px;
+  gap: 9px;
+  border-radius: 45px;
+  opacity: 0px;  
+  cursor: pointer;
+
 }
+
 .dark-mode .inner-box .buttons button {
   color: var(--black-color);
 }
@@ -819,11 +863,87 @@ img {
   text-decoration: none;
   font-weight: bold;
   display: block;
-  margin-top: 15%; /* Space between buttons and link */
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  
+
+ /* Space between buttons and link */
 }
 .dark-mode .inner-box .view-project {
   color:var(--black-color);
 }
+/*=============updated details*==============*/
+.inner-box .buttons {
+  display: flex;
+  justify-content: space-between; /* Space between buttons and verified */
+  align-items: center;
+  gap: 0.5rem; /* Space between AI and ML buttons */
+  margin: 0.5rem 0; /* Space between buttons and paragraph */
+  border-radius: 45px 0px 0px 0px;
+}
+
+.inner-box .verified {
+  display: flex;
+  align-items: center;
+  margin-left: auto; /* Push verified to the right */
+}
+
+.inner-box .verified .verify-icon {
+  width: 30px;
+  height: 30px;
+  gap: 0px;
+  opacity: 0px;
+  
+}
+
+.inner-box .verified .verify-text {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color:var(--white-color);
+
+}
+
+.dark-mode .inner-box .verified .verify-text {
+  color: var(--black-color);
+}
+
+.inner-box .project-line {
+  display: flex;
+  justify-content: space-between; /* Space between View Project and like */
+  align-items: center;
+  margin-top: 4%; /* Space between buttons and link */
+}
+
+.inner-box .like {
+  display: flex;
+  align-items: center;
+  margin-left: auto; /* Push like to the right */
+}
+
+.inner-box .like .like-icon {
+  width: 40px;
+  height: 40px;
+
+
+}
+
+.inner-box .like .like-text {
+  margin-left: 0.3rem; /* Space between image and text */
+  color: var(--white-color); /* Adjust color based on mode */
+}
+
+.dark-mode .inner-box .like .like-text {
+  color: var(--black-color);
+}
+
 /*=====scroll====*/
 
 .scroll-arrow {

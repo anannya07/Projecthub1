@@ -24,3 +24,23 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
+/* card animation */
+// Select all cards with the class 'card'
+const cards = document.querySelectorAll('.card');
+
+cards.forEach((card) => {
+  card.addEventListener('click', function() {
+    // Add the animation class
+    this.classList.add('animate');
+
+    // Get the target URL from the data attribute
+    const url = this.getAttribute('data-url');
+
+    // Navigate to the specified URL after the animation duration
+    setTimeout(() => {
+      window.location.href = url;
+    }, 300); // Wait for the duration of the animation
+  });
+});
+
+
