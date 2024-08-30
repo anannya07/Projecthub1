@@ -1,0 +1,1003 @@
+/* Base styles for large screens */
+
+/***************nav*********************/
+:root {
+    --primary-color:#7B61FF;
+    --default-color: #4f5665;
+    --grey-color: #f0f0f0;
+    --white-color:#F4F4F5;
+    --black-color:#0B0B0A;
+    --lightpink: #ffcce0;
+    --blue: #1a1aff;
+    --custom: #1a1aff;
+    --color: #4d4d4d;
+    --lightblue: #ccccff;
+    --box-shadow-1: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --box-shadow-2: 0 5px 15px rgba(255, 94, 58, 0.2);
+    --gradient: linear-gradient(to bottom, #fccb90, #ff9a9e);
+    --btn-gradient: linear-gradient(to bottom, #ff5151 50%, #ff5e3a);
+    --widthprofile: 5vw;
+  }
+  /* Base styles for the search bar */
+  .search-bar {
+    background: #222222;
+    width: 100%; /* Full width for smaller screens */
+    max-width: 280px; /* Limit the maximum width */
+    height: 48px;
+    padding: 15px 16px 15px 21px;
+    border-radius: 6px;
+    border: 1px solid transparent; /* Adjust border to only show the bottom */
+    opacity: 1; /* Ensure it's visible */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    padding-right: 2.5rem; 
+    color:var(--white-color);
+  }
+  .dark-mode .search-bar{
+    color:var(--black-color);
+  }
+  .search-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%; 
+  }
+  
+  #search-icon {
+    position: absolute;
+    right: 1rem; /* Adjust as needed */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1.2rem; /* Adjust icon size */
+    height: auto; /* Maintain aspect ratio */
+    pointer-events: none; /* Ensure clicks go to the input field */
+    color: #969696; /* This will not affect images, you can remove this line */
+  }
+  #mode-icon  {
+    position: absolute; /* Adjust as needed */
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 24px;
+    max-height: 24px;
+    cursor: pointer; /* Indicate it's clickable */
+  }
+  
+  
+  /* Styles for smaller screens */
+  @media (max-width: 833px) {
+    .search-bar {
+      width: 100%; /* Full width on smaller screens */
+      max-width: 240px; /* Reduce maximum width if needed */
+      padding: 12px 14px; /* Adjust padding for smaller screens */
+    }
+  }
+  
+  @media (max-width: 567px) {
+    .search-bar {
+      width: 100%; /* Full width for mobile screens */
+      max-width: 200px; /* Further reduce maximum width for mobile screens */
+      padding: 10px 12px; /* Adjust padding for mobile screens */
+    }
+  }
+  
+  /* Ensuring search icon is aligned properly */
+  .search-icon {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Optional: Adjust search icon position */
+  .search-icon i {
+    margin-left: 10px; /* Adjust spacing between search bar text and icon */
+  }
+  
+  
+  .login-button {
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 153 px;
+    height: Fixed (48px)px;
+    padding: 12px 52px 12px 52px;
+    gap: 0px;
+    opacity: 0px;
+    background: #7B61FF;
+  }
+  
+  .mode-toggle {
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  .mode-toggle i {
+    font-size: 24px;
+  }
+  .dark-mode {
+      background-color: #F4F4F5;
+    }
+  
+  
+  .dark-mode .navbar {
+    background-color:   #F4F4F5;
+  }
+  
+  .dark-mode .search-bar {
+    background: #DDDDDD;
+    border: 1px solid #D4D4D4;
+  }
+  
+  .dark-mode .login-button {
+    background-color:#7B61FF;
+    color:#0B0B0A;
+    font-weight: 500;
+  }
+  
+  *,
+  *::after,
+  *::before {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+  
+  }
+  
+  html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    /*overflow-x: hidden;*/
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Inter;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--);
+    background-color: var(--black-color);
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+  }
+  
+  
+  .mode-toggle {
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  .mode-toggle i {
+    font-size: 24px;
+    background: #7B61FF;
+  
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4 {
+    color: var(--primary-color);
+    line-height: 1.2;
+    font-weight: 500;
+  }
+  
+  a {
+    text-decoration: none;
+    color:inherit;
+  }
+  
+  li {
+    list-style-type: none;
+  }
+  
+  section {
+    padding: 5rem 0 5rem;
+    overflow: hidden;
+  }
+  
+  p {
+    line-height: 3rem;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  .logo{
+    
+    position: absolute; /* Position the logo absolutely relative to its closest positioned ancestor */
+    /*top: 4rem; /* Aligns the logo to the top of the page */
+    left: 2.5rem; /* Aligns the logo to the left side of the page */
+    margin-top: 0.5%; /* Remove any additional top margin */
+    margin-left: 3.5%; /* Remove any additional left margin */
+    
+    opacity: 1; /* Make sure the logo is visible */
+    margin-right: auto; /* Keeps the logo on the left */
+    width: 122.12px;
+    height: 24px;
+    gap: 0px;
+    opacity: 0px;
+    
+    
+  }
+  /* Adjust logo position and size for medium screens (e.g., tablets) */
+  @media (max-width: 1024px) {
+    .logo {
+      width: 180px; /* Adjust size if needed */
+      height: auto; /* Maintain aspect ratio */
+      left: 1.5rem; /* Adjust left position */
+      top: 3rem; /* Adjust top position */
+      margin-right: 1rem; /* Reduce right margin */
+    }
+  }
+  
+  /* Adjust logo position and size for small screens (e.g., mobile devices) */
+  @media (max-width: 768px) {
+    .logo {
+      width: 170px; /* Adjust size if needed */
+      height: auto; /* Maintain aspect ratio */
+      left: 1rem; /* Adjust left position */
+      top: 2rem; /* Adjust top position */
+      margin-right: 1rem; /* Reduce right margin */
+    }
+  }
+  
+  /* Further adjust logo position and size for very small screens (e.g., mobile portrait) */
+  @media (max-width: 480px) {
+    .logo {
+      width: 140px; /* Adjust size if needed */
+      height: auto; /* Maintain aspect ratio */
+      left: 0.5rem; /* Adjust left position */
+      top: 1.5rem; /* Adjust top position */
+      margin-right: 0.5rem; /* Reduce right margin */
+    }
+  }
+  /* ========== Custom Classes =========== */
+  .container {
+    max-width: 120rem;
+    padding: 0 3rem;
+    margin: auto;
+  }
+  
+  @media (min-width: 1600px) {
+    .container {
+      max-width: 160rem;
+    }
+  }
+  
+  @media (max-width: 567px) {
+    .container {
+      padding: 0 1rem;
+    }
+  }
+  
+  .d-flex {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* ========== Header =========== */
+  .header {
+    margin-bottom: 4rem;
+  }
+  
+  .header .navbar {
+    padding: 2.5rem 0;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .header .navbar .row {
+    margin-left: 30.8%;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+  }
+  
+  .header .navbar .row .nav-list a {
+    display: inline-block;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24.2px;
+    text-align: left;
+    color: var(--white-color);
+    margin-left: 1.5rem; /* Shift links slightly to the right */
+  }
+  
+  .dark-mode .header .navbar .row .nav-list a {
+    color: var(--black-color);
+  }
+  
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space between logo and other elements */
+    max-width: 95%; /* Ensures the navbar doesn't overflow */
+    margin: 0 auto; /* Centers the navbar within the parent */
+    padding: 0 20px; /* Optional: Adds padding on the sides */
+  }
+  
+    
+  
+  @media (max-width: 768px) {
+    .navbar {
+      left: 2%; /* Further adjust the positioning on smaller screens */
+      max-width: 98%;
+    }
+  }
+  
+  .header .navbar .row .nav-list p.user-link {
+    display: none;
+  }
+  
+  .header .navbar .row .nav-list a:not(:last-child) {
+    margin-right: 0.5rem;
+  }
+  
+  .header .navbar .row .nav-list a:hover {
+    color: var(--primary-color);
+  }
+  
+  .header .navbar .row .icons .icon {
+    font-size: 2.2rem;
+    padding: 0.5rem;
+    color: var(--primary-color);
+    cursor: pointer;
+    justify-content: center;
+    position: relative;
+    margin-left: 0.5rem; /* Shift icons slightly to the right */
+  }
+  
+  .header .navbar .row .icons .icon:not(:last-child) {
+    margin-right: 1rem;
+  }
+  .header .navbar .row .icons .icon {
+    margin-right: 1rem; /* Reduced space between icons */
+  }
+  
+  .header .navbar .row .icons .search-bar {
+    margin-left: 0.5rem; /* Reduced space between search bar and sun icon */
+  }
+  
+  
+  
+  .header .hamburger,
+  .header .close {
+    display: none;
+  }
+  /* Show hamburger on small screens */
+  @media (max-width: 768px) {
+    .header .hamburger {
+      display: block; /* Show hamburger menu */
+      font-size: 3rem; /* Adjust size if needed */
+      color: var(--primary-color); /* Match color with the rest of the theme */
+      position: absolute; /* Position it absolutely within the header */
+      top: 1.5rem; /* Adjust top position */
+      right: 1.5rem; /* Adjust right position */
+      cursor: pointer; /* Show pointer cursor on hover */
+      /*z-index: 1100; /* Ensure it is above other content */
+    }
+  }
+  
+  /* Ensure the close button is positioned and styled similarly */
+  .header .close {
+    display: none; /* Hide close button on larger screens */
+  }
+  
+  @media (max-width: 768px) {
+    .header .close {
+      display: block; /* Show close button */
+      font-size: 3rem; /* Adjust size if needed */
+      color: var(--primary-color); /* Match color with the rest of the theme */
+      position: absolute; /* Position it absolutely within the nav list */
+      top: 2.5rem; /* Adjust top position */
+      right: 2.5rem; /* Adjust right position */
+      cursor: pointer; /* Show pointer cursor on hover */
+      z-index: 1100; /* Ensure it is above other content */
+    }
+  }
+  
+  /* Optional: Adjust for very small screens (mobile portrait) */
+  
+  @media (min-width: 1600px) {
+    .header .navbar {
+      padding: 4rem 0;
+    }
+  }
+  
+  @media (max-width: 963px) {
+    .header .navbar .row .icons .icon .search-bar{
+      display: none;
+    }
+    .header .navbar .row .icons .icon #search-icon{
+      display: none;
+    }
+    .header .navbar .row .icons .icon #mode-icon{
+      display: flex;
+    }
+  
+  }
+  @media (max-width: 386px) {
+    .header .navbar .icons .icon .login-button{
+      display: none;
+    }
+    .header .navbar .row .icons .icon #mode-icon{
+      display: flex;
+      padding-top: 10%;
+    }
+  
+  }
+  @media (max-width: 1354px) {
+    .header .navbar {
+      padding-left: 0; /* Remove padding for mobile screens */
+    }
+    
+  
+    .header .navbar .row .nav-list {
+      position: fixed;
+      top: 0;
+      right: -400%;
+      width: 100%;
+      max-width: 35rem;
+      height: 100%;
+      background-color: var(--black-color);
+      z-index: 1000;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 4rem 1rem;
+    }
+    .dark-mode .header .navbar .row .nav-list {
+      background-color: var(--white-color);
+    }
+    .header .navbar .row .nav-list a {
+      font-size: 2rem;
+      display: hidden;
+  
+    }
+    
+    .header .navbar .row .nav-list a:not(:last-child) {
+      margin: 0 0 1rem 0;
+    }
+  
+    .header .navbar .row .nav-list .close {
+      display: block;
+      position: absolute;
+      top: 2.5rem;
+      right: 2.5rem;
+      color: var(--primary-color);
+      font-size: 3rem;
+    }
+  
+    .header .navbar .row .nav-list.show {
+      right: 0;
+    }
+  
+    .header .navbar .row .hamburger {
+      display: block;
+      font-size: 3rem;
+      color: var(--primary-color);
+    }
+  }
+.content {
+    width: 1254px; /* Adjust as needed */
+    height: auto; /* Allow height to adjust based on content */
+    margin-left: 118px;
+    gap: 28px;
+    opacity: 1; /* Ensure opacity is 1 for visibility */
+    display: flex;
+    flex-direction: column;
+    margin-top: -1%;
+    margin-bottom: -6%;
+  }
+  .content .aiml-projects{
+    margin-top: -50px;
+    font-family: Inter;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 36.2px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: #F4F4F5; 
+  }
+  
+  /* Styles for .project-cards */
+  .project-cards {
+    width: 100%;
+    height: auto;
+    display: flex;
+    gap: 15px;
+  }
+  .ai-1-icon{
+    width: 391px;
+    height: 178.37px;
+    margin-top: 138.02px;
+  }
+  /* Styles for .description and .cards */
+  .description {
+    width: 371px; /* Fixed width */
+    height: auto; /* Allow height to adjust based on content */
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    opacity: 0px;
+    margin-top: -14px;
+    position: sticky;
+    top: 0;
+  }
+  .description .ai-and-ml{
+    margin-top: 92px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+    text-align: left;
+    color: #FFFFFF;
+    
+  }
+  /****************************cards***************************
+  
+  /* Responsive styles for 1200px and below */
+  @media (max-width: 1200px) {
+    .content {
+      width: 100%;
+      margin-left: 0;
+      gap: 30px;
+    }
+  
+    .project-cards {
+      gap: 30px;
+    }
+  
+    .description {
+      width: 40%;
+      gap: 30px;
+    }
+  
+    .cards {
+      width: calc(100% - 40%);
+    }
+  }
+  
+  /* Responsive styles for 768px and below */
+  @media (max-width: 768px) {
+    .content {
+      width: 100%;
+      margin-left: 0;
+      gap: 20px;
+    }
+  
+    .project-cards {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .description {
+      width: 100%;
+      gap: 20px;
+    }
+  
+    .cards {
+      width: 100%;
+    }
+  }
+  
+  /* Responsive styles for 576px and below */
+  @media (max-width: 576px) {
+    .content {
+      width: 100%;
+      margin-left: 0;
+      gap: 10px;
+    }
+  
+    .description {
+      width: 100%;
+      gap: 10px;
+    }
+  
+    .cards {
+      width: 100%;
+    }
+  }
+  /**************************card************************/
+  .card {
+    position: relative;
+    flex: 0 0 auto;
+    width: 270px; /* Updated width */
+    height: 370px; /* Updated height */
+    background: #18181B;
+    margin-right: 0;
+    border: 1px solid #3A3A3A;
+    overflow: hidden;
+    border-radius: 11px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .card-container {
+    display: grid; /* Use CSS Grid */
+    grid-template-columns: repeat(3, 1fr); /* 3 columns of equal width */
+    gap: 1.5rem; /* Space between cards */
+    padding-left: 1rem; /* Padding around the container */
+    box-sizing: border-box; /* Include padding in width calculation */
+    justify-items: end; /* Align cards to the right within the container */
+    margin-left: 1%;
+    max-height: 760px; /* Fixed max-height for the container */
+    overflow-y: auto; /* Enable vertical scrolling when content exceeds height */
+    overflow-x: hidden;
+    width: calc(100% - 371px); /* Adjust width to account for the description div */
+    height: calc(2 * 380px + 2rem);  /* Example height, adjust as needed */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding-left: 15px; /* Ensure some space between the cards and the edge */
+    box-sizing: border-box; /* Include padding in the width calculation */
+    margin-top: -2%;
+  }
+    /* Hide scrollbar for WebKit browsers (Chrome, Safari) */
+.card-container::-webkit-scrollbar {
+    width: 0; /* Remove scrollbar space */
+    background: transparent; /* Optional: remove background */
+  }
+  
+  /* Hide scrollbar for Firefox */
+  .card-container {
+    scrollbar-width: none; /* Hide scrollbar */
+  }
+  
+  /* Hide scrollbar for Edge and Internet Explorer */
+  .card-container {
+    -ms-overflow-style: none; /* Hide scrollbar */
+  }
+  @media (max-width: 1024px) { /* For tablets and medium-sized screens */
+    .card-container {
+      grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+    }
+  }
+  
+  @media (max-width: 768px) { /* For mobile devices */
+    .card-container {
+      grid-template-columns: 1fr; /* 1 card per row */
+      justify-items: center; /* Center cards on smaller screens */
+    }
+  }
+
+@media (max-width: 768px) {
+    .card-container {
+      width: 100%; /* Full width on smaller screens */
+      margin-top: 5%;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .description {
+      width: 100%; /* Full width on smaller screens */
+    }
+    .card-container {
+      width: 100%; /* Full width on smaller screens */
+    }
+  }
+  .dark-mode .card {
+    background: #EBE6F9;
+    border: 1px solid #C5C5C5;
+  }
+  
+  @keyframes smart-animate {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.03); /* Or any other transformation you need */
+    }
+  }
+  
+  .card.animate {
+    animation-name: smart-animate;
+    animation-timing-function: ease-out;
+    animation-duration: 300ms;
+    animation-fill-mode: forwards; /* Ensures the final state is retained */
+  }
+  
+  .inner-box {
+    position: absolute;
+    width: 220px; /* Adjusted width for proportion */
+    height: 150px; /* Adjusted height for proportion */
+    top: 20px; /* Adjusted for new size */
+    left: 25px; /* Adjusted for new size */
+    border-radius: 2px 0px 0px 0px;
+    background: linear-gradient(90deg, #0B0B0A 45.3%, #1B0F37 100%);
+    opacity: 1; /* Ensure the box is always visible */
+  }
+  .dark-mode .inner-box {
+    background: linear-gradient(90deg, #F4F4F5 45.3%, #E6DBFF 100%);
+  }
+  
+  .inner-box h2 {
+    margin: 0.5rem 0; /* Margin for spacing */
+    font-family: Inter;
+    font-size: 18px; /* Adjusted font size */
+    font-weight: 700;
+    line-height: 28px; /* Adjusted line height */
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: var(--white-color);
+    margin-top: 80%; /* Adjusted top margin for smaller box */
+    margin-bottom: 5%;
+  }
+  .dark-mode .inner-box h2 {
+    color: var(--black-color);
+  }
+  
+  .inner-box p {
+    margin: 0.5rem 0; /* Margin for spacing */
+    color: var(--white-color);
+    font-family: Inter;
+    font-family: Inter;
+    font-size: 10.8px;
+    font-weight: 300;
+    line-height: 10.92px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    
+  }
+  .dark-mode .inner-box p {
+    color: var(--black-color);
+  }
+  
+  .inner-box .buttons {
+    display: flex;
+    gap: 0.5rem; /* Space between buttons */
+    margin: 0.5rem 0; /* Space between buttons and paragraph */
+    border-radius: 45px 0px 0px 0px;
+    padding-top: 2%;
+  }
+  
+  .inner-box .buttons button {
+    background: #7B61FF33;
+    border: 1px solid #7B61FF;
+    color: var(--white-color);
+    cursor: pointer;
+    font-family: Inter;
+    font-size: 14px; /* Adjusted font size */
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    width: 48px; /* Corrected width */
+    height: 24px; /* Corrected height */
+    padding: 2px 14px;
+    gap: 9px;
+    border-radius: 45px;
+    opacity: 1;  
+    cursor: pointer;
+  }
+  
+  .dark-mode .inner-box .buttons button {
+    color: var(--black-color);
+  }
+  
+  .inner-box .view-project {
+    color: var(--white-color);
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    font-family: Inter;
+    font-size: 16px; /* Adjusted font size */
+    font-weight: 400;
+    line-height: 24px; /* Adjusted line height */
+    letter-spacing: -0.02em;
+    text-align: left;
+  }
+  .dark-mode .inner-box .view-project {
+    color: var(--black-color);
+  }
+  
+  .inner-box .verified {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Push verified to the right */
+  }
+  
+  .inner-box .verified .verify-icon {
+    width: 20px; /* Adjusted width */
+    height: 20px; /* Adjusted height */
+    gap: 0px;
+    opacity: 1; /* Corrected opacity */
+  }
+  
+  .inner-box .verified .verify-text {
+    font-family: Inter;
+    font-size: 14px; /* Adjusted font size */
+    font-weight: 200;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: var(--white-color);
+  }
+  
+  .dark-mode .inner-box .verified .verify-text {
+    color: var(--black-color);
+  }
+  
+  .inner-box .project-line {
+    display: flex;
+    justify-content: space-between; /* Space between View Project and like */
+    align-items: center;
+    margin-top: 8%; /* Space between buttons and link */
+  }
+  
+  .inner-box .like {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Push like to the right */
+  }
+  
+  .inner-box .like .like-icon {
+    width: 30px; /* Adjusted size */
+    height: 30px; /* Adjusted size */
+  }
+  
+  .inner-box .like .like-text {
+    margin-left: 0.3rem; /* Space between image and text */
+    color: var(--white-color); /* Adjust color based on mode */
+  }
+  
+  .dark-mode .inner-box .like .like-text {
+    color: var(--black-color);
+  }
+  
+
+  /********************************footer***********************************/
+  .footer {
+    background: #121212;
+    color: #fff;
+    padding: 2rem;
+    flex-grow: 1; /* Allows footer to grow and occupy the remaining space */
+    padding: 10rem 3rem 10rem;
+    margin-top: 7rem;
+    justify-content: space-between; 
+  }
+  .dark-mode .footer{
+    background: #EDEDED;
+    color:var(--black-color);
+  }
+  
+  .footer .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+  }
+  
+  .footer-logo img {
+    max-width: 100%;
+  }
+  
+  .footer h3 {
+    margin-bottom: 3rem;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 16.59px;
+    text-align: left;
+    color: #D6D2CD;
+  
+  }
+  .dark-mode .footer h3{
+    color:#292D32;
+  
+  } 
+  .footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  
+  }
+  
+  .footer li {
+    margin-bottom: 0.5rem;
+    text-align: left;
+  
+  }
+  .footer-links li a {
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 15.08px;
+    text-align: left;
+  
+  
+  }
+  
+  .footer a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+  }
+  .footer-contact a {
+    text-decoration: none;
+    color: #fff; /* Text color */
+    font-size: 1.2rem;
+  }
+  .dark-mode .footer a{
+    color:var(--black-color);
+  }
+  .dark-mode .footer-contact a{
+    color:var(--black-color);
+  }
+  .footer-contact ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+  }
+  
+  .footer-contact li {
+    display: flex; /* Use flexbox to align items horizontally */
+    align-items: center; /* Vertically center the icon and text */
+    margin-bottom: 0.5rem; /* Add some spacing between each list item */
+  }
+  
+  .footer-contact .social-icon {
+    vertical-align: middle;
+  
+    margin-right: 0.5rem; /* Space between icon and text */
+    width: 24px; /* Adjust the size of the icons as needed */
+    height: 24px;
+  }
+  
+  .footer-contact a {
+    text-decoration: none; /* Remove underline from links */
+    color: inherit; /* Inherit text color */
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 15.08px;
+    text-align: left;
+    
+  }
+  
+  .footer-bottom {
+    margin-top: 5%;
+    text-align: center;
+  
+  }
+  
+  
+  @media (max-width: 768px) {
+    .footer .row {
+        grid-template-columns: 1fr;
+    }
+    .footer-logo,
+    .footer-links,
+    .footer-contact {
+        margin-bottom: 2rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .footer h3 {
+        font-size: 1.2rem; /* Slightly larger for readability */
+        margin-bottom: 1.5rem; /* Adjusted spacing */
+    }
+    .footer-contact a {
+        font-size: 1rem; /* Adjust text size for smaller screens */
+    }
+    .footer-bottom {
+        font-size: 0.9rem; /* Increased font size slightly */
+        margin-top: 2rem; /* Reduced margin for a more compact design */
+        padding: 1rem 0; /* Added padding for better spacing */
+        line-height: 1.4; /* Adjusted line height for readability */
+        text-align: center;
+    }
+  }
+  @media (max-width: 480px) {
+    .footer-links li a {
+        font-size: 1rem; /* Reduce font size for smaller screens */
+        line-height: 1.5; /* Increase line height for better readability */
+        font-weight: 400; /* Maintain the same font weight */
+        text-align: left; /* Keep the text alignment consistent */
+    }
+  }
+  
+  
