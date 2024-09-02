@@ -1688,6 +1688,7 @@ img {
     display: inline-block;
     min-width: 128px;
     color:#969696;
+    cursor: pointer;
   }
   .trending-title .show-more{
     position: relative;

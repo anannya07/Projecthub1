@@ -36,7 +36,7 @@
 --gap-mid: 17px;
 --gap-base: 16px;
 --gap-lgi: 19px;
---gap-5xs: 4px;
+--gap-5xs: 8px;
 --gap-9xs-4: 3.4px;
 
 /* Paddings */
@@ -350,10 +350,12 @@
     
     /*****************************tech stacks used*************************/
     .ai {position: relative;
-      letter-spacing: -0.02em;
-      line-height: 34px;
+      line-height: 33.6px;
       display: inline-block;
       min-width: 25px;
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: -2%;
     }
     .tech-icons {
       max-width: 54px;
@@ -366,11 +368,14 @@
       align-items: center;
       justify-content: center;
       padding: var(--padding-4xs) var(--padding-base);
+      margin-left: 3%;
     }
     .ml {
       position: relative;
-      letter-spacing: -0.02em;
-      line-height: 34px;
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: -2%;
+      line-height: 33.6px;
       display: inline-block;
       min-width: 36px;
     }
@@ -388,8 +393,10 @@
     }
     .python {
       position: relative;
-      letter-spacing: -0.02em;
-      line-height: 34px;
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: -2%;
+      line-height: 33.6px;
       display: inline-block;
       min-width: 82px;
     }
@@ -408,8 +415,10 @@
     }
     .numpy {
       position: relative;
-      letter-spacing: -0.02em;
-      line-height: 34px;
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: -2%;
+      line-height: 33.6px;
       display: inline-block;
       /*min-width: 82px;*/
     }
@@ -428,8 +437,10 @@
     }
     .pandas {
       position: relative;
-      letter-spacing: -0.02em;
-      line-height: 34px;
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: -2%;
+      line-height: 33.6px;
       display: inline-block;
      /* min-width: 85px;*/
     }
@@ -448,8 +459,10 @@
     }
     .sql {
       position: relative;
-      letter-spacing: -0.02em;
-      line-height: 34px;
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: -2%;
+      line-height: 33.6px;
       display: inline-block;
       min-width: 48px;
       
@@ -1180,14 +1193,15 @@ img {
   transition: max-height 0.3s ease, padding 0.3s ease;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
-   padding: 26px 22px 60px 30px;
+  padding: 20px 18px 50px 24px; /* Reduced padding for a more compact height */
   /**/
-  margin-bottom: 1rem; /* Space between FAQ items */
+  margin-bottom: 2rem; /* Space between FAQ items */
   background: linear-gradient(90deg, #0B0B0A 45.3%, #1B0F37 100%);
   border-radius: 8px;
   /**/
   box-shadow: 0px 4px 10px 0px #69696966;
 }
+
 .dark-mode .faq-question {
   background: linear-gradient(90deg, #F4F4F5 45.3%, #E6DBFF 100%);
   box-shadow: 0px 4px 10px 0px #69696966;
@@ -1195,14 +1209,13 @@ img {
 }
 
 .faq-question p {
-  margin-left: 3%;
   font-family: Inter;
   font-size: 22px;
   font-weight: 700;
   line-height: 26.4px;
   letter-spacing: 0.005em;
   text-align: left;
-  
+  margin-left: -1%;
 
 }
 
@@ -1211,7 +1224,7 @@ img {
   border: none;
   font-size: 1.2rem;
   position: absolute;
-  top: 20%;
+  top: 26%;
   right: 1rem; /* Fixed position from the right */
   margin-left: 10px;
   transition:  0.3s ease, transform 0.3s ease; /* Smooth color and rotation transition */
@@ -1270,6 +1283,7 @@ img {
     width: 100%; /* Full width on smaller screens */
   }
 }
+
 
 /*===== Footer =========== */
 .footer {
