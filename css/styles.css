@@ -29,7 +29,7 @@
   max-width: 280px; /* Limit the maximum width */
   height: 48px;
   padding: 15px 16px 15px 21px;
-  border-radius: 6px;
+  border-radius: 16px;
   border: 1px solid transparent; /* Adjust border to only show the bottom */
   opacity: 1; /* Ensure it's visible */
   box-sizing: border-box; /* Include padding and border in element's total width and height */
@@ -48,7 +48,7 @@
 
 #search-icon {
   position: absolute;
-  right: 1rem; /* Adjust as needed */
+  right: 2rem; /* Adjust as needed */
   top: 50%;
   transform: translateY(-50%);
   width: 1.2rem; /* Adjust icon size */
@@ -98,7 +98,7 @@
 .login-button {
   background-color: var(--primary-color);
   color: white;
-  border-radius: 4px;
+  border-radius: 12px;
   cursor: pointer;
   width: 153 px;
   height: Fixed (48px)px;
@@ -516,13 +516,13 @@ img {
   font-family:Inter;
   font-size: 64px;
   font-weight: 700;
-  line-height: 61.44px;
+  line-height: 71.44px;
   letter-spacing: -2%;
   text-align: left;
   
 }
 .header .hero .row .col .paragraph{
-  margin-top: 2%;
+  margin-top: 5%;
 }
 .dark-mode .header .hero .row .col .subtitle {
   color: #0a0a0b;
@@ -550,7 +550,7 @@ img {
   font-style: normal;
   font-weight: 300;
   font-size: 20px;
-  line-height: 96%;
+  line-height: 100%;
   /* or 19px */
   letter-spacing: -0.01em;
   color: #F4F4F5;
@@ -571,7 +571,7 @@ img {
   text-align: left;
   background: var(--primary-color);
   box-shadow: var(--box-shadow-1);
-  margin-top: 1.2rem;
+  margin-top: 5.2rem;
 
 }
 .dark-mode .header .hero .row .col .btn {
@@ -1045,7 +1045,7 @@ img {
   top: 20%;
   right: 1rem; /* Fixed position from the right */
   margin-left: 10px;
-  transition:  0.3s ease, transform 0.3s ease; /* Smooth color and rotation transition */
+  transition:  0.8s ease, transform 0.8s ease; /* Smooth color and rotation transition */
   max-width:24px;
   max-height: 24px;
   
@@ -1133,7 +1133,7 @@ img {
 .footer h3 {
   margin-bottom: 3rem;
   font-size: 22px;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 16.59px;
   text-align: left;
   color: #D6D2CD;
@@ -1154,10 +1154,11 @@ img {
   margin-bottom: 0.5rem;
   text-align: left;
 
+
 }
 .footer-links li a {
   font-family: Inter;
-  font-size: 20px;
+  font-size: 21px;
   font-weight: 400;
   line-height: 15.08px;
   text-align: left;
