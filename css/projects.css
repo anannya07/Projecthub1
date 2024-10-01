@@ -497,14 +497,54 @@
   .content .aiml-projects{
     margin-top: -50px;
     font-family: Inter;
-    font-size: 48px;
+    font-size: 44px;
     font-weight: 700;
     line-height: 36.2px;
     letter-spacing: -0.02em;
     text-align: left;
     color: #F4F4F5; 
   }
-  
+  #data-science{
+    margin-top: -50px;
+    font-family: Inter;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 36.2px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: #F4F4F5; 
+  }
+  #cyber-security{
+    margin-top: -50px;
+    font-family: Inter;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 36.2px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: #F4F4F5; 
+  }
+  #home-automation{
+    margin-top: -50px;
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 36.2px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: #F4F4F5; 
+  }
+  #health-care{
+    margin-top: -50px;
+    font-family: Inter;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 36.2px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: #F4F4F5; 
+  }
+
   /* Styles for .project-cards */
   .project-cards {
     width: 100%;
