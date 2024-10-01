@@ -1134,7 +1134,7 @@ img {
 }
 
 /************************Trending***************************/
-#clickable-card {
+#clickable-card,clickable-card2,clickable-card3,clickable-card4,clickable-card5,clickable-card6,clickable-card7,clickable-card8,clickable-card9{
   cursor: pointer; /* Changes cursor to pointer, indicating it's clickable */
 }
 
