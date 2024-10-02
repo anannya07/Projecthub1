@@ -4,7 +4,7 @@ const searchIcon = document.getElementById('search-icon');
 const scrollArrowImgs = document.querySelectorAll('.scroll-arrow img'); // Select all scroll arrow images
 const faqToggles = document.querySelectorAll('.faq-toggle'); // Select all FAQ toggle buttons
 // Footer elements
-const footerLogo = document.getElementById('footer-logo');
+const footerLogo = document.getElementById('footer-logo1');
 const socialIcons = document.querySelectorAll('.footer-contact .social-icon'); // Select all social media icon images
 let isDarkMode = false;
 
@@ -31,7 +31,7 @@ modeIcon.addEventListener('click', function() {
       img.src = './images/arrow-down-lightmode.png';
     });
     // Update footer logo image
-    footerLogo.src = './images/Vector.png';
+    footerLogo.src = './images/logo_footer_black.svg';
 
     // Update social media icons
     socialIcons.forEach(icon => {
@@ -60,7 +60,7 @@ modeIcon.addEventListener('click', function() {
       img.src = './images/arrow-down-darkmode.png';
     });
     // Update footer logo image
-    footerLogo.src = './images/Vector-dark.png';
+    footerLogo.src = './images/vector-purple.png';
 
     // Update social media icons
     socialIcons.forEach(icon => {
