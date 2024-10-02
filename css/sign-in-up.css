@@ -16,8 +16,8 @@ input {
        font-family: "Poppins", sans-serif;
 }
 span{
-       color: #981cc6;
-       border-color: #7e22a0;
+       color: #7B61FF;
+       border-color: #7B61FF;
        cursor:pointer;    
 }
 .container {
@@ -71,7 +71,7 @@ form.sign-in-form {
 
 .title {
        font-size: 2.2rem;
-       color: #8b07bc;
+       color: #7B61FF;
        margin-bottom: 10px;
 }
 
@@ -146,13 +146,13 @@ form.sign-in-form {
 }
 
 .social-icon:hover {
-       color: #981cc6;
-       border-color: #7e22a0;
+       color:#7B61FF;
+       border-color: #7B61FF;
 }
 
 .btn {
        width: 150px;
-       background-color: #3e0054;
+       background-color: #7B61FF;
        border: none;
        outline: none;
        height: 49px;
@@ -166,7 +166,7 @@ form.sign-in-form {
 }
 
 .btn:hover {
-       background-color: #3e0054;
+       background-color:#b178e6;
 }
 
 .panels-container {
@@ -187,7 +187,7 @@ form.sign-in-form {
        top: -10%;
        right: 48%;
        transform: translateY(-50%);
-       background-image: linear-gradient(-45deg, #3e0054 0%, #3e0054 100%);
+       background-image: linear-gradient(-45deg, #8715f0 0%, #8715f0 100%);
        transition: 1.8s ease-in-out;
        border-radius: 50%;
        z-index: 6;
@@ -513,7 +513,7 @@ form.sign-in-form {
 }
 
 .show-password-icon:hover {
-       color: #981cc6;
+       color: #7B61FF;
        /* Change color on hover */
        transform: translateY(-50%) scale(1.2);
        /* Slight grow effect */
@@ -521,10 +521,10 @@ form.sign-in-form {
 
 /* Hover effect for Sign in and Sign up buttons */
 .btn:hover {
-       background-color: #981cc6;
+       background-color: #7B61FF;
        /* Light purple on hover */
        color: #fff;
-       box-shadow: 0px 4px 15px rgb(192, 90, 226);
+       box-shadow: 0px 4px 15px rgb(104, 54, 255);
        /* Add a subtle shadow */
        transition: background-color 0.3s ease, box-shadow 0.3s ease;
        /* Smooth transition */
