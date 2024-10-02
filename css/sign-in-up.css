@@ -15,7 +15,11 @@ body,
 input {
        font-family: "Poppins", sans-serif;
 }
-
+span{
+       color: #981cc6;
+       border-color: #7e22a0;
+       cursor:pointer;    
+}
 .container {
        position: relative;
        width: 100%;

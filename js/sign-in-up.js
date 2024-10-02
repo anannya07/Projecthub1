@@ -9,16 +9,15 @@ sign_up_btn.addEventListener("click", () => {
 sign_in_btn.addEventListener("click", () => {
        container.classList.remove("sign-up-mode");
 });
-
-// Toggle password visibility
-const togglePassword = document.querySelector("#togglePassword");
-const passwordInput = document.querySelector("#password");
-
-togglePassword.addEventListener("click", () => {
-       // Toggle the type attribute between password and text
-       const type = passwordInput.getAttribute("type") === "password" ? "text" : "password";
-       passwordInput.setAttribute("type", type);
-
-       // Toggle the icon between eye and eye-slash
-       togglePassword.classList.toggle("fa-eye-slash");
-});
+let eyeicon = document.getElementById("eyeclose");
+let password = document.getElementById("password");
+eyeicon.onclick = function(){
+       if(password.type == "password" ){
+              password.type = "text";
+              eyeicon.textContent = "visibility"; // Switch to eye-open icon
+       }
+       else{
+              password.type = "password"; 
+              eyeicon.textContent = "visibility_off"; // Switch to eye-closed icon
+       }
+}
