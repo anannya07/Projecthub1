@@ -233,13 +233,13 @@
       /*background-color: purple;*/
     }
     .cse-2020,
-    .team-egotistical-genius {
+    .team-name {
       position: relative;
       letter-spacing: -0.02em;
       line-height: 75.41%;
       display: inline-block;
     }
-    .team-egotistical-genius {
+    .team-name {
       font-size: 32.4px;
       color: var(--color-whitesmoke);
       max-width: 100%;
@@ -571,7 +571,7 @@
     font-size: 38px;
     line-height: 29px;
   }
-  .team-egotistical-genius {
+  .team-name {
       font-size: 26px;
       line-height: 20px;
     }
@@ -610,12 +610,12 @@
   }
   
     .cse-2020,
-    .team-egotistical-genius {
+    .team-name {
       font-size: var(--font-size-lgi);
       line-height: 15px;
       
     }
-    .team-egotistical-genius{
+    .team-name{
       margin-top: -20%;
     }
     .cse-2020 {
